@@ -1,27 +1,26 @@
 const sayHello = (string) => {
-  // your code here
+  return (`Hello, ${string}!`);
 };
 
 const uppercase = (string) => {
-  // your code here
+  return string.toUpperCase();  //can make one line if you don't use return const lowercase = (string) => string.toUpperCase();
 };
 
 const lowercase = (string) => {
-  // your code here
+  return string.toLowerCase();
 };
 
 const countCharacters = (string) => {
-  // your code here
+  return string.length;
 };
 
 const firstCharacter = (string) => {
-  // your code here
+  return string.substring(0,1);
 };
 
 const firstCharacters = (string, n) => {
-  // your code here
+  return string.substring(0, 4);
 };
-
 module.exports = {
   sayHello,
   uppercase,

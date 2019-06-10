@@ -1,33 +1,35 @@
 const getNthElement = (index, array) => {
-  // your code here
-};
+  if (array <= 4) {
+    return array[index];
+  }
+}; // need to work on this one
 
 const arrayToCSVString = (array) => {
-  // your code here
+  return array.join();
 };
 
 const csvStringToArray = (string) => {
-  // your code here
+  return string.split(',');
 };
 
 const addToArray = (element, array) => {
-  // your code here
+  array.push(element);
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+  return array.concat(element);
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  array.splice(array)
 };
 
 const numbersToStrings = (numbers) => {
-  // your code here
+  return numbers.toString();
 };
 
 const uppercaseWordsInArray = (strings) => {
-  // your code here
+  return strings.toUpperCase(strings);
 };
 
 const reverseWordsInArray = (strings) => {
@@ -35,11 +37,13 @@ const reverseWordsInArray = (strings) => {
 };
 
 const onlyEven = (numbers) => {
-  // your code here
+  if (numbers % 2 === 0) {
+    return onlyEven;
+  }
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  array.remove[index, 2];
 };
 
 const elementsStartingWithAVowel = (strings) => {
