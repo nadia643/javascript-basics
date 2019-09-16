@@ -48,7 +48,20 @@ const removeNthElement2 = (index, array) => {
 
 const elementsStartingWithAVowel = (strings) => {
   // your code here
-};
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  /* he would do the green below was better than the if thing
+  return strings.filter(word => {
+    return vowels.includes(word[0].toLowerCase());
+  });
+*/
+  const wordsWithVowels = [];
+  strings.forEach(word => { //gone over e'thing with strings and printed
+    if (vowels.includes(word[0].toLowerCase())) {
+      wordsWithVowels.push(word);
+    }
+  })
+  return wordsWithVowels;
+}; //we're calling inclues on vowels and passing in word[0] on it
 
 const removeSpaces = (string) => {
   // your code here
